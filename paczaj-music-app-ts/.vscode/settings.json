@@ -1,0 +1,34 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "blog",
+      "database": "paczaj-blog",
+      "username": "paczaj",
+      "password": "paczaj"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5433,
+      "driver": "PostgreSQL",
+      "name": "paczaj-music",
+      "database": "paczajmusic",
+      "username": "paczajmusic",
+      "password": "paczajmusic"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "musicbranz",
+      "username": "musicbrainz",
+      "password": "musicbrainz",
+      "database": "postgres"
+    }
+  ]
+}
