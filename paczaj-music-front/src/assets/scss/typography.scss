@@ -1,0 +1,261 @@
+@import "variables";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.6rem;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Rubik, Roboto, "Roboto Slab", serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.heading--big {
+    font-size: 4rem;
+    padding-left: 30px;
+}
+
+p {
+    line-height: 2.7rem;
+}
+
+
+
+
+
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot?vqkyf8");
+    src: url("../fonts/icomoon.eot?vqkyf8#iefix") format("embedded-opentype"),
+        url("../fonts/icomoon.ttf?vqkyf8") format("truetype"), url("../fonts/icomoon.woff?vqkyf8") format("woff"),
+        url("../fonts/icomoon.svg?vqkyf8#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    // speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-album:before {
+    content: "\e900";
+}
+
+.icon-cancel:before {
+    content: "\e903";
+}
+
+.icon-exclamation-circle:before {
+    content: "\f06a";
+}
+
+.icon-exclamation-triangle:before {
+    content: "\f071";
+}
+
+.icon-warning:before {
+    content: "\f071";
+}
+
+.icon-vynil:before {
+    content: "\e901";
+}
+
+.icon-home:before {
+    content: "\e902";
+}
+
+.icon-price-tag:before {
+    content: "\e935";
+}
+
+.icon-price-tags:before {
+    content: "\e936";
+}
+
+.icon-calendar:before {
+    content: "\e953";
+}
+
+.icon-users:before {
+    content: "\e972";
+}
+
+.icon-spinner2:before {
+    content: "\e97b";
+}
+
+.icon-spinner9:before {
+    content: "\e982";
+}
+
+.icon-list2:before {
+    content: "\e9bb";
+}
+
+.icon-earth:before {
+    content: "\e9ca";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+
+
+.icon-rotate {
+    animation: rotation 1.3s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// .icon-home-outline:before {
+//     content: "\e909";
+// }
+
+// .icon-home:before {
+//     content: "\e90a";
+// }
+
+// .icon-tags:before {
+//     content: "\e907";
+// }
+
+// .icon-tag:before {
+//     content: "\e908";
+// }
+
+// .icon-calendar:before {
+//     content: "\e906";
+// }
+
+// .icon-wikipedia-w:before {
+//     content: "\e905";
+// }
+
+// .icon-calendar-minus-o:before {
+//     content: "\e903";
+// }
+
+// .icon-calendar-plus-o:before {
+//     content: "\e904";
+// }
+
+// .icon-exclamation-circle:before {
+//     content: "\e902";
+// }
+
+// .icon-times-circle-o:before {
+//     content: "\e900";
+// }
+
+// .icon-times-circle:before {
+//     content: "\e901";
+// }
+
+// .icon-play:before {
+//     content: "\e912";
+// }
+
+// .icon-price-tag:before {
+//     content: "\e935";
+// }
+
+// .icon-price-tags:before {
+//     content: "\e936";
+// }
+
+// .icon-location:before {
+//     content: "\e947";
+// }
+
+// .icon-location2:before {
+//     content: "\e948";
+// }
+
+// .icon-spinner2:before {
+//     content: "\e97b";
+// }
+
+// .icon-spinner4:before {
+//     content: "\e97d";
+// }
+
+// .icon-spinner5:before {
+//     content: "\e97e";
+// }
+
+// .icon-spinner9:before {
+//     content: "\e982";
+// }
+
+// .icon-spinner10:before {
+//     content: "\e983";
+// }
+
+// .icon-list:before {
+//     content: "\e9ba";
+// }
+
+// .icon-list2:before {
+//     content: "\e9bb";
+// }
+
+// .icon-menu:before {
+//     content: "\e9bd";
+// }
+
+// .icon-earth:before {
+//     content: "\e9ca";
+// }
+
+// .icon-link:before {
+//     content: "\e9cb";
+// }
+
+// .icon-notification:before {
+//     content: "\ea08";
+// }
+
+// .icon-cancel-circle:before {
+//     content: "\ea0d";
+// }
