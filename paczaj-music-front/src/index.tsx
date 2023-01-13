@@ -1,9 +1,9 @@
 import React from 'react';
+import axios from 'axios';
 import ReactDOM from 'react-dom/client';
 import AppContextProvider from './context/AppContext';
 import App from './App';
 import './assets/scss/index.scss';
-import axios from 'axios';
 
 axios.defaults.baseURL =
   process.env.REACT_APP_ENVIROMENT && process.env.REACT_APP_ENVIROMENT === 'dev'
