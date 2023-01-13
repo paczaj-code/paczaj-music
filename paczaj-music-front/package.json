@@ -10,16 +10,24 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/react-youtube": "^7.10.0",
+    "axios": "^0.27.2",
+    "html-react-parser": "^3.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
+    "react-youtube": "^10.0.0",
+    "sass": "^1.54.9",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build:production": "env-cmd -f ./.env.production npm run build",
+    "test": "react-scripts test --verbose --coverage --watchAll",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,6 +46,19 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3001/api",
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.5",
+    "@types/react-transition-group": "^4.4.5",
+    "env-cmd": "^10.1.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.tsx",
+      "!src/utils/interfaces.ts"
     ]
   }
 }
