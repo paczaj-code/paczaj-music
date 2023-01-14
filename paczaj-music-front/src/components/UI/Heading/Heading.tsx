@@ -2,7 +2,7 @@ import React from 'react';
 import { classNameModifiers } from '../../../uitls/utils';
 
 interface HeadingTypes {
-  headingLevel: React.ElementType | string;
+  headingLevel?: React.ElementType | string;
   title: string | undefined;
   title_icon?: string;
   heading_prefix?: string;
