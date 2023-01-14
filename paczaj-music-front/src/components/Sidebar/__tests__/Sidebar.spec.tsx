@@ -21,16 +21,15 @@ const artist_list = [
   },
 ];
 
-describe('Tests for ArtistsList component', () => {
-  beforeEach(() => {
+describe('Tests for Sidebar component', () => {
+  beforeEach(() => {});
+
+  it('should be proper HTML structure', () => {
     render(
       <AppContext.Provider value={testContextValues}>
         <Sidebar artist_list={artist_list} />{' '}
       </AppContext.Provider>
     );
-  });
-
-  it('should be proper HTML structure', () => {
     const artistListWrapper = screen.getByRole('navigation');
     const artistList = screen.getByRole('list');
     const artistItems = screen.getAllByRole('listitem');
@@ -42,11 +41,21 @@ describe('Tests for ArtistsList component', () => {
     expect(artistSearch).toBeInTheDocument();
   });
   it('should be 2 li elements', () => {
+    render(
+      <AppContext.Provider value={testContextValues}>
+        <Sidebar artist_list={artist_list} />{' '}
+      </AppContext.Provider>
+    );
     const artistItems = screen.getAllByRole('listitem');
     expect(artistItems.length).toEqual(2);
   });
 
   it('should be proper filtered list and no message', () => {
+    render(
+      <AppContext.Provider value={testContextValues}>
+        <Sidebar artist_list={artist_list} />{' '}
+      </AppContext.Provider>
+    );
     userEvent.type(
       screen.getByRole('textbox', { name: 'searchArtists' }),
       'Artist 2'
@@ -59,6 +68,11 @@ describe('Tests for ArtistsList component', () => {
   });
 
   it('should be proper message when filtered array is empty', () => {
+    render(
+      <AppContext.Provider value={testContextValues}>
+        <Sidebar artist_list={artist_list} />{' '}
+      </AppContext.Provider>
+    );
     userEvent.type(
       screen.getByRole('textbox', { name: 'searchArtists' }),
       'Beta'
@@ -71,13 +85,18 @@ describe('Tests for ArtistsList component', () => {
   });
 
   it('should be proper clered filter when clear icon is cliked', () => {
+    render(
+      <AppContext.Provider value={testContextValues}>
+        <Sidebar artist_list={artist_list} />{' '}
+      </AppContext.Provider>
+    );
     userEvent.type(
       screen.getByRole('textbox', { name: 'searchArtists' }),
       'Artist 2'
     );
 
-    const clearIcon = document.querySelector('.icon__clear-search');
-    expect(clearIcon).toBeInTheDocument();
+    const clearIcon = screen.getByRole('button');
+    // expect(clearIcon).toBeInTheDocument();
 
     userEvent.click(clearIcon!);
     // wait();
@@ -88,7 +107,12 @@ describe('Tests for ArtistsList component', () => {
     expect(artistItems.length).toEqual(2);
   });
 
-  it('should be setChosenArtistId function ', () => {
+  it('should be setChosenArtistId function', () => {
+    render(
+      <AppContext.Provider value={testContextValues}>
+        <Sidebar artist_list={artist_list} />{' '}
+      </AppContext.Provider>
+    );
     const items = screen.getAllByRole('listitem');
 
     userEvent.click(items[1]);
