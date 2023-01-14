@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 const onClick = jest.fn();
 
 describe('Tests for Button component', () => {
-  it('should be button on screen with proper class', () => {
+  it('should be button on screen with proper class when button_modifier prop is given', () => {
     render(<Button type="button" button_modifier="homepage" />);
     const button = screen.getByRole('button');
 
@@ -13,7 +13,7 @@ describe('Tests for Button component', () => {
     expect(button).toHaveClass('button--homepage');
   });
 
-  it('should be extra class when extra_class prop given', () => {
+  it('should be proper class when button_prefix prop given', () => {
     render(<Button type="button" button_prefix="app" />);
     const button = screen.getByRole('button');
 
