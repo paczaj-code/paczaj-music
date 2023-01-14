@@ -8,15 +8,18 @@ const ArtistItem: React.FC<Partial<ArtistListInterface>> = ({
   isLoading,
   onClick,
 }) => {
+  // const classModifier =
+  let classModifier = '';
+
+  if (current === id && !isLoading) {
+    classModifier = '--active';
+  }
+  if (current === id && isLoading) {
+    classModifier = '--loading';
+  }
+
   return (
-    <li
-      onClick={onClick}
-      className={[
-        'artist-list__item',
-        current === id && !isLoading ? 'artist-list__item--active' : '',
-        current === id && isLoading ? 'artist-list__item--loading' : '',
-      ].join(' ')}
-    >
+    <li onClick={onClick} className={`artist-list__item${classModifier}`}>
       <span>{name}</span>
     </li>
   );
