@@ -34,7 +34,7 @@
     >.artist-list {
         opacity: 0;
         transform: translateX(-20px);
-        transition: all 0.3s linear;
+        transition: all 0.3s cubic-bezier(0.42, 0, 0.19, 0.42);
     }
 
     &__data-loaded {
