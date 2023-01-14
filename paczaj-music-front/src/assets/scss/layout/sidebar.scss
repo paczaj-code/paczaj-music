@@ -38,11 +38,11 @@
 
     &::-webkit-scrollbar {
         width: 9px;
-        cursor: w-resize;
     }
 
     &::-webkit-scrollbar-thumb {
         @include vericalScollBar-thumb;
+        width: 30px;
     }
 
     &::-webkit-scrollbar-track {
