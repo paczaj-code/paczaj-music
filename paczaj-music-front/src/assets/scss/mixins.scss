@@ -9,7 +9,14 @@
 }
 
 @mixin vericalScollBar-track {
-    background-color: hsl(0, 0%, 14%);
+    background-color: hsla(216, 47%, 15%, 0.445);
     box-shadow: 0 0 3px hsla(0, 0%, 3%, 0.7) inset;
     border-radius: 20px;
+}
+
+@mixin panel {
+    background-color: $bg04;
+    box-shadow: 0 0 45px -6px hsl(0, 0%, 4%) inset, 0 0 5px hsl(0, 0%, 3%), 0 2px 2px hsla(0, 0%, 8%, 0.788), 0 5px 4px hsla(0, 0%, 8%, 0.888);
+    border-radius: 10px;
+    border: solid $border01 1px;
 }
