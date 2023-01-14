@@ -1,0 +1,15 @@
+@mixin vericalScollBar-thumb {
+    background: linear-gradient(to top,
+            darken($primary, 52%),
+            darken($primary, 40%),
+            darken($primary, 52%));
+    box-shadow: 0 0px 5px 1px hsla(0, 0%, 0%, 0.9) inset,
+        0 0 15px -5px hsl(0, 0%, 0%) inset;
+    border-radius: 5px;
+}
+
+@mixin vericalScollBar-track {
+    background-color: hsl(0, 0%, 14%);
+    box-shadow: 0 0 3px hsla(0, 0%, 3%, 0.7) inset;
+    border-radius: 20px;
+}
