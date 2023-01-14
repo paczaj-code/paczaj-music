@@ -1,6 +1,6 @@
 export const Equalizer = () => {
   return (
-    <div className="equalizer">
+    <div className="equalizer" role="status">
       <span></span>
       <span></span>
       <span></span>

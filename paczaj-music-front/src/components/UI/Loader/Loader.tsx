@@ -19,7 +19,7 @@ const Loader: React.FC<LoaderTypes> = ({ trigger }) => {
         mountOnEnter
         appear
       >
-        <div className="loader__wrapper">
+        <div className="loader__wrapper" role="status">
           <Equalizer />
           <h1 className="loader__title">
             <span className="love">I❤️ </span> <br />
