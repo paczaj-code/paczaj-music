@@ -1,0 +1,92 @@
+// @import '../variables.scss';
+
+// .button {
+//     cursor: pointer;
+
+//     &--homepage,
+//     &--show-menu,
+//     &--close-menu {
+//         border: none;
+//         outline: none;
+//         position: fixed;
+//         z-index: 200;
+//         width: 35px;
+//         height: 35px;
+//         top: 3px;
+//     }
+
+//     &::before {
+//         font-family: 'icomoon' !important;
+//         font-size: 1.8rem;
+//     }
+
+//     &--show-menu,
+//     &--close-menu {
+//         background: $bg02;
+//         left: 0;
+//         border-radius: 0 5px 5px 0;
+//         box-shadow: 5px 0 7px 0px rgba(0, 0, 0, 0.534);
+
+//         &::before {
+//             content: '\e972';
+//         }
+//     }
+
+//     &--close-menu::before {
+//         content: '\e903';
+//     }
+
+//     &--homepage {
+//         background: $bg03;
+//         right: 0;
+//         border-radius: 5px 0 0 5px;
+//         box-shadow: -2px 2px 7px 0px rgba(10, 10, 10, 0.534);
+
+//         &::before {
+//             font-size: 2.1rem;
+//             content: '\e902';
+//             margin-top: -3px;
+//         }
+//     }
+// }
+
+// @media only screen and (min-width: 700px) {
+//     .button--show-menu {
+//         display: none;
+//     }
+// }
+
+// .button--show__more {
+//     background-color: transparent;
+//     border: dashed 1px darken($primary, 20%);
+
+//     outline: none;
+//     padding: 5px 7px;
+//     border-radius: 15px;
+
+//     &--hidden {
+//         visibility: hidden;
+//     }
+// }
+
+// .button--release_modal__close {
+//     background: transparent;
+//     border: none;
+//     outline: none;
+//     position: absolute;
+//     right: 30px;
+
+//     >i {
+//         font-size: 2.7rem;
+//         opacity: 0.2;
+//         text-shadow: 0 2px 2px black;
+//         transition: all 0.2s ease-in-out;
+//     }
+
+//     &:hover {
+//         >i {
+//             opacity: 0.6;
+//             color: $secondary;
+//         }
+//     }
+// }

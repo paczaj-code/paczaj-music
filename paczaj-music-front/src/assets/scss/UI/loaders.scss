@@ -1,0 +1,137 @@
+@import "../variables.scss";
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+
+    &--youtube {
+        background-color: hsla(225, 31%, 7%, 0.599);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        z-index: 1001;
+    }
+
+    &__icon {
+        font-size: 12rem;
+        position: fixed;
+        top: 20px;
+        opacity: 0.1;
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .backdrop {
+        &--artist {
+            width: calc(100vw - 270px);
+        }
+    }
+}
+
+.loader__wrapper {
+    position: fixed;
+    transform: translateX(calc(50vw - 50%));
+    top: 70px;
+    // opacity: 0;
+    margin-top: 50px;
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 0 10px 5px 10px !important;
+    // z-index: 10000;
+    @include panel;
+}
+
+.loader__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    padding: 0px !important;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+
+    >span.love {
+        font-size: 4rem;
+        letter-spacing: 0;
+        vertical-align: middle;
+    }
+
+    >span.rocknroll {
+        color: $primary;
+        font-style: italic;
+    }
+}
+
+.equalizer {
+    justify-self: center;
+
+    >span {
+        display: inline-block;
+        box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.932), 0 0 19px -3px rgba(36, 35, 35, 0.493) inset;
+        border-radius: 2px 2px 0 0;
+        margin-right: 3px;
+        margin-top: -15px;
+        width: 10px;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #ff9500, #ff5e3a);
+        color: transparent;
+        animation-name: equalizer;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    &__artist {
+        position: fixed;
+        align-self: center;
+        z-index: 200;
+        flex-shrink: 1;
+    }
+
+    >span:nth-child(1) {
+        height: 10px;
+        animation-delay: 0s;
+    }
+
+    >span:nth-child(2) {
+        animation-delay: 0.2s;
+        height: 10px;
+    }
+
+    >span:nth-child(3) {
+        animation-delay: 0.25s;
+        height: 6px;
+    }
+
+    >span:nth-child(4) {
+        animation-delay: 0.19s;
+        height: 4px;
+    }
+
+    >span:nth-child(5) {
+        animation-delay: 0.33s;
+        height: 15px;
+    }
+
+    >span:nth-child(6) {
+        animation-delay: 0.29s;
+        height: 10px;
+    }
+
+    >span:nth-child(7) {
+        animation-delay: 0.1s;
+        height: 0px;
+    }
+
+    >span:nth-child(1) {
+        animation-delay: 0.5s;
+        height: 5px;
+    }
+}
