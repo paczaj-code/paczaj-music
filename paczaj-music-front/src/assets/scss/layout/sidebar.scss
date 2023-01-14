@@ -7,8 +7,8 @@
     margin-left: -270px;
     z-index: 100;
     position: fixed;
-    box-shadow: 2px 0 10px px hsla(0, 0%, 0%, 0.788);
-    background: darken($bg01, 2%);
+    box-shadow: 2px 0 10px 0px hsla(0, 0%, 0%, 0.788);
+    background: hsla(223, 35%, 20%, 0.241);
     transition: margin 0.4s linear;
 
     &--show {
@@ -57,8 +57,8 @@
 
     cursor: pointer;
     font-size: 1.5rem;
-    border-bottom: 1px $border03 inset;
-    transition: box-shadow 300ms ease-out, color 200ms linear;
+    border-bottom: 1px hsla(223, 33%, 26%, 0.541) solid;
+
 
     >span {
         padding-left: 20px;
@@ -66,13 +66,16 @@
 }
 
 .artist-list__item {
+
+
     >span {
         transition: all 0.3s ease-out;
     }
 
     &--active {
-        box-shadow: 0 0 10px -2px darken($primary, 20%);
-        background-color: darken($bg01, 4%);
+        box-shadow: 0 0 1px 1px hsla(16, 95%, 52%, 0.447);
+
+        background: linear-gradient(to right, hsla(19, 83%, 18%, 0.241), hsla(19, 83%, 45%, 0.241));
     }
 }
 
@@ -141,7 +144,7 @@
 
 @supports (scrollbar-width: auto) {
     .artist-list__items {
-        scrollbar-color: darken($primary, 40%) hsl(0, 0%, 14%);
+        scrollbar-color: rgba(darken($primary, 30%), 0.5) hsla(216, 37%, 15%, 0.845);
         scrollbar-width: auto;
     }
 }
