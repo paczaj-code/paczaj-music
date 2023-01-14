@@ -69,7 +69,6 @@ const Sidebar: React.FC<CT> = ({ artist_list }) => {
           <ul className="artist-list__items">
             {filteredArtistLists?.map((artist: ArtistListInterface) => (
               <ArtistItem
-                isDisabled={Boolean(!artist_list)}
                 isLoading={Boolean(loadingType?.artist)}
                 current={chosenArtistId}
                 key={artist.id}
