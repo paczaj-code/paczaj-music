@@ -43,12 +43,9 @@ a {
 ::selection {
     background: hsla(204, 93%, 36%, 0.4);
     box-shadow: 0 0 5px black;
-    // border-radius: 10px;
-    /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
     background: hsla(204, 93%, 36%, 0.4);
     box-shadow: 0 0 5px black;
-    /* Gecko Browsers */
 }
