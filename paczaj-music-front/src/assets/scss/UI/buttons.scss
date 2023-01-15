@@ -1,19 +1,36 @@
-// @import '../variables.scss';
+@import '../variables.scss';
 
-// .button {
-//     cursor: pointer;
 
-//     &--homepage,
-//     &--show-menu,
-//     &--close-menu {
-//         border: none;
-//         outline: none;
-//         position: fixed;
-//         z-index: 200;
-//         width: 35px;
-//         height: 35px;
-//         top: 3px;
-//     }
+[class*="button"] {
+    border: none;
+    outline: none;
+    position: fixed;
+    z-index: 200;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+
+    &::before {
+        font-family: 'icomoon' !important;
+        font-size: 1.8rem;
+    }
+}
+
+.show-menu__button,
+.close-menu__button {
+    background: linear-gradient(hsla(204, 99%, 27%, 0.941), hsla(204, 99%, 12%, 0.941));
+    top: 10px;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 7px 0px rgba(0, 0, 0, 0.534);
+
+    &::before {
+        content: '\e972';
+        color: darken($text-color, 20%);
+        font-size: 2rem;
+        text-shadow: 4px 4px 4px #202020a8;
+    }
+}
 
 //     &::before {
 //         font-family: 'icomoon' !important;
@@ -50,11 +67,11 @@
 //     }
 // }
 
-// @media only screen and (min-width: 700px) {
-//     .button--show-menu {
-//         display: none;
-//     }
-// }
+@media only screen and (min-width: 700px) {
+    .show-menu__button {
+        display: none;
+    }
+}
 
 // .button--show__more {
 //     background-color: transparent;
