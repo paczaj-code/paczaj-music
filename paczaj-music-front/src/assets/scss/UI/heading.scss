@@ -1,3 +1,13 @@
+[class*="heading"] {
+    display: flex;
+    align-items: center;
+
+    >i {
+        margin-right: 5px;
+    }
+}
+
+
 // .heading {
 //     &--artists-details {
 //         font-size: 5rem;

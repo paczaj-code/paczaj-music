@@ -82,25 +82,26 @@
     padding-block: 10px;
     display: flex;
     justify-content: center;
-    background: lighten($bg01, 1%);
+    // background: lighten($bg01, 1%);
+    background: hsla(223, 25%, 10%, 0.241);
     box-shadow: 0 2px 7px -2px hsl(0, 0%, 6%);
 
     >input {
-        background: darken($bg01, 2%);
-        border: 1px solid lighten($bg01, 2%);
+        background: hsla(223, 25%, 50%, 0.241);
+        border: 1px solid hsla(223, 25%, 30%, 0.241);
         height: 30px;
         border-radius: 10px;
         padding-inline: 5px;
         font-size: 1.4rem;
-        color: $text-color;
+        color: rgba($text-color, 70%);
 
         &:focus {
-            border: 1px solid lighten($bg01, 10%);
+            border: 1px solid hsla(223, 75%, 60%, 0.241);
             outline: none;
         }
 
         &::placeholder {
-            color: rgba($text-color, 30%);
+            color: rgba($text-color, 20%);
         }
     }
 }
