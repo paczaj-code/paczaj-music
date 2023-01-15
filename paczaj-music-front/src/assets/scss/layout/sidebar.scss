@@ -32,10 +32,6 @@
 
     list-style: none;
 
-    >li:last-child {
-        // margin-bottom: 45px;
-    }
-
     &::-webkit-scrollbar {
         width: 9px;
     }
@@ -58,15 +54,12 @@
     font-size: 1.5rem;
     border-bottom: 1px hsla(223, 33%, 26%, 0.541) solid;
 
-
     >span {
         padding-left: 20px;
     }
 }
 
 .artist-list__item {
-
-
     >span {
         transition: all 0.3s ease-out;
     }
@@ -74,7 +67,9 @@
     &--active {
         box-shadow: 0 0 1px 1px hsla(16, 95%, 52%, 0.447);
 
-        background: linear-gradient(to right, hsla(19, 83%, 18%, 0.241), hsla(19, 83%, 45%, 0.241));
+        background: linear-gradient(to right,
+                hsla(19, 83%, 18%, 0.241),
+                hsla(19, 83%, 45%, 0.241));
     }
 }
 
