@@ -6,11 +6,11 @@ import ErrorItem from './ErrorItem';
 
 const Error: React.FC<ErrorTypes> = ({ error }) => {
   return (
-    <div className="error__container">
+    <div className="error__container" role="alert">
       <Heading
         heading_modifier="error"
         headingLevel="h2"
-        title="Ups! Coś poszło nie cacy...."
+        title="Ups! Coś poszło nie cacy..."
         title_icon="icon-warning"
       />
       <Divider divider_modifier="error" />

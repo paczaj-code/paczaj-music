@@ -7,7 +7,7 @@ interface ErrorItemTypes {
 
 const ErrorItem: React.FC<ErrorItemTypes> = ({ title, info }) => {
   return (
-    <p className="error-item">
+    <p className="error-item" role="presentation">
       {title}: <span>{info}</span>
     </p>
   );
