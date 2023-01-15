@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.error__container {
+    @include panel;
+    position: fixed;
+    transform: translateX(calc(50vw - 50%));
+    top: 70px;
+    // opacity: 0;
+    margin-top: 50px;
+    // z-index: 3000;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-self: center;
+    overflow: hidden;
+    // background-color: $danger;
+    // padding: 0 10px 5px 10px !important;
+    // padding: 20px;
+
+    >.heading--error {
+        background-color: $danger ;
+        width: 100%;
+        padding: 10px 10px;
+
+        >i {
+            color: hsla(0, 73%, 54%, 0.753);
+        }
+    }
+
+    >.error-item {
+        color: hsla(0, 73%, 54%, 0.753) !important;
+        text-align: left;
+        font-weight: bold;
+        padding: 10px;
+
+        >span {
+            color: $text-color;
+            margin-left: 10px;
+        }
+    }
+}
