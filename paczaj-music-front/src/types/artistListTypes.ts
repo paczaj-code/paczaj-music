@@ -7,7 +7,6 @@ export interface ArtistInterface {
 }
 
 export interface ArtistListInterface extends ArtistInterface {
-  [x: string]: any;
   country: string;
   artist_type: string;
   tags: string[] | [];
