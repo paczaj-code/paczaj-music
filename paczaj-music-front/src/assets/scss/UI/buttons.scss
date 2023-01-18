@@ -8,6 +8,7 @@
     z-index: 200;
     width: 37px;
     height: 37px;
+    color: $text-color;
     cursor: pointer;
 
     &::before {
@@ -32,40 +33,23 @@
     }
 }
 
-//     &::before {
-//         font-family: 'icomoon' !important;
-//         font-size: 1.8rem;
-//     }
 
-//     &--show-menu,
-//     &--close-menu {
-//         background: $bg02;
-//         left: 0;
-//         border-radius: 0 5px 5px 0;
-//         box-shadow: 5px 0 7px 0px rgba(0, 0, 0, 0.534);
 
-//         &::before {
-//             content: '\e972';
-//         }
-//     }
 
-//     &--close-menu::before {
-//         content: '\e903';
-//     }
 
-//     &--homepage {
-//         background: $bg03;
-//         right: 0;
-//         border-radius: 5px 0 0 5px;
-//         box-shadow: -2px 2px 7px 0px rgba(10, 10, 10, 0.534);
+.homepage__button {
+    background: hsla(223, 35%, 40%, 0.241);
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 2px 7px 0px rgba(10, 10, 10, 0.534);
 
-//         &::before {
-//             font-size: 2.1rem;
-//             content: '\e902';
-//             margin-top: -3px;
-//         }
-//     }
-// }
+    &::before {
+        font-size: 2.1rem;
+        content: '\e902';
+        margin-top: -3px;
+    }
+}
+
 
 @media only screen and (min-width: 700px) {
     .show-menu__button {
