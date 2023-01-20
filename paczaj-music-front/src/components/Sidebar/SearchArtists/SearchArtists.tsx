@@ -30,7 +30,7 @@ const SearchArtists: React.FC<SearchArtistsTypes> = ({
       {ref.current && ref.current!.value.length! > 0 && (
         <i
           role="button"
-          className="icon-cancel icon__clear-search"
+          className="icon-cancel-circle icon__clear-search"
           onClick={clearInputHandler}
         ></i>
       )}
