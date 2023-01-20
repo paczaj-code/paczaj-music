@@ -26,12 +26,15 @@ const Section: React.FC<SectionTypes> = ({
         heading_prefix={section_type}
         heading_modifier={section_modifier}
       />
-      r
       <Divider
         divider_prefix={section_type}
         divider_modifier={section_modifier}
       />
-      {children}
+      <div className={`${section_type}--content`}>{children}</div>
+      <Divider
+        divider_prefix={section_type}
+        divider_modifier={section_modifier}
+      />
     </section>
   );
 };
