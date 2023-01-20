@@ -7,14 +7,25 @@
     border: 1px ridge rgb(58, 58, 58);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.753), 0 3px 3px rgba(0, 0, 0, 0.788) inset;
 
-    &--artists-details {
-        margin-top: -7px;
-        margin-bottom: 0;
-        border-color: #1269c7;
-        border-style: groove;
-    }
 
     &--error {
         border: inset hsla(0, 96%, 31%, 0.527) 1px;
     }
+}
+
+.artist-details__divider {
+    border: 1px inset hsl(223, 24%, 20%);
+    box-shadow: 0 0 2px black inset;
+
+}
+
+.artist-details__divider:first-of-type {
+    margin-top: -14px;
+    border: 2px outset hsl(223, 24%, 20%);
+    box-shadow: 0 0 2px rgb(54, 54, 54) inset;
+}
+
+.info_panel__divider {
+    border: 1px inset hsl(223, 14%, 20%);
+    box-shadow: 0 0 2px black inset;
 }

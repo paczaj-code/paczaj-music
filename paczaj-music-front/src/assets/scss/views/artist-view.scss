@@ -1,0 +1,39 @@
+@import '../mixins.scss';
+
+
+// .artist-details--content {
+//     // position: relative;
+// }
+
+// .artist-details__info-panel {
+//     @include panel;
+
+// }
+
+// .artist-details__description {
+//     overflow: hidden;
+//     line-height: 2.7rem;
+// }
+
+// .artist-details__heading {
+//     font-size: 4rem;
+// }
+
+
+// .wikipedia__desctription__actions {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 20px 0;
+
+//     >.show__more__button {
+//         @include panel;
+//         position: relative;
+//         width: 100px;
+//         z-index: 0;
+
+//         &.hidden {
+//             visibility: hidden;
+//         }
+//     }
+// }

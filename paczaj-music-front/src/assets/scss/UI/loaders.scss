@@ -28,9 +28,9 @@
 
 @media only screen and (min-width: 700px) {
     .backdrop {
-        &--artist {
-            width: calc(100vw - 270px);
-        }
+        width: calc(100vw - 270px);
+
+        &--artist {}
     }
 }
 
@@ -46,7 +46,6 @@
     align-items: center;
     justify-self: center;
     padding: 0 10px 5px 10px !important;
-    // z-index: 10000;
     @include panel;
 }
 
@@ -56,7 +55,7 @@
     text-shadow: 2px 2px 4px black;
     text-align: center;
     padding: 0px !important;
-    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    // font-family: "Rubik", Arial, Helvetica, sans-serif;
 
     >span.love {
         font-size: 4rem;

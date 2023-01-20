@@ -1,24 +1,17 @@
-@import "../variables.scss";
+@import '../variables.scss';
 
 .error__container {
     @include panel;
     position: fixed;
     transform: translateX(calc(50vw - 50%));
     top: 70px;
-    // opacity: 0;
+
     margin-top: 50px;
-    // z-index: 3000;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-self: center;
+
     overflow: hidden;
-    // background-color: $danger;
-    // padding: 0 10px 5px 10px !important;
-    // padding: 20px;
 
     >.heading--error {
-        background-color: $danger ;
+        background-color: $danger;
         width: 100%;
         padding: 10px 10px;
 
