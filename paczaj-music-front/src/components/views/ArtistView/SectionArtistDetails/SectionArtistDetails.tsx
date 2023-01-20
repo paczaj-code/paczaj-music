@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
 import parse from 'html-react-parser';
-import { AppContext } from '../../../../../context/AppContext';
-import Section from '../../../../UI/Section/Section';
-import Button from '../../../../UI/Button/Buttons';
+import { AppContext } from '../../../../context/AppContext';
+import Section from '../../../UI/Section/Section';
+import Button from '../../../UI/Button/Buttons';
 import ArtistInfoPanel from './ArtistInfoPanel';
 interface SectionArtistDetailsTypes {
   artist_name: string;

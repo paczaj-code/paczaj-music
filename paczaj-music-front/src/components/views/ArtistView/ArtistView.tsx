@@ -6,7 +6,7 @@ import { ArtistDetailTypes } from '../../../types/artistDetailTypes';
 import useAxios from '../../../hooks/useAxios';
 // import Section from '../../UI/Section/Section';
 import Backdrop from '../../UI/Backdrop/Backdrop';
-import SectionArtistDetails from './Sections/SectionArtistDetails/SectionArtistDetails';
+import SectionArtistDetails from './SectionArtistDetails/SectionArtistDetails';
 
 interface ArtistViewTypes {
   artist_data?: ArtistDetailTypes;

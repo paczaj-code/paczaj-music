@@ -1,5 +1,5 @@
 import React from 'react';
-import Divider from '../../../../UI/Divider/Divider';
+import Divider from '../../../UI/Divider/Divider';
 
 interface ArtistInfoPanelTypes {
   country?: string;
