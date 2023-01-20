@@ -1,13 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import ArtistInfoPanel from '../../../ArtistView/SectionArtistDetails/ArtistInfoPanel';
-
-const testData = {
-  country: 'Poland',
-  country_code: 'pl',
-  begin_date_year: 1999,
-  end_date_year: 2020,
-  tags: ['punk', 'indie'],
-};
+import { testData } from '../../testData';
 
 describe('Tests for ArtistInfoPanel component', () => {
   it('should be panel with all elements', () => {
