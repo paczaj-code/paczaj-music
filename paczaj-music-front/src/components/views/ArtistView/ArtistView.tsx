@@ -3,14 +3,16 @@ import { Helmet } from 'react-helmet';
 import { CSSTransition } from 'react-transition-group';
 import { AppContext } from '../../../context/AppContext';
 import { ArtistDetailTypes } from '../../../types/artistDetailTypes';
+import { YoutubeTypes } from '../../../types/youtubeTypes';
 import useAxios from '../../../hooks/useAxios';
 // import Section from '../../UI/Section/Section';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import SectionArtistDetails from './SectionArtistDetails/SectionArtistDetails';
+import SectionYoutube from './SectionYoutube/SectionYoutube';
 
 interface ArtistViewTypes {
   artist_data?: ArtistDetailTypes;
-  // youtube_movies: YoutubeMovieTypes[];
+  youtube_movies?: YoutubeTypes[];
   // releases: {
   //   studio_albums: ReleaseTypes[];
   //   extended_plays: ReleaseTypes[];
@@ -58,18 +60,21 @@ const ArtistView: React.FC<ArtistViewTypes> = () => {
         mountOnEnter
         nodeRef={nodeRef}
       >
-        <SectionArtistDetails
-          artist_name={artistDetails?.artist_data?.artist_name!}
-          artist_description={
-            artistDetails?.artist_data?.wikipedia_data.description
-          }
-          wikipedia_link={artistDetails?.artist_data?.wikipedia_suffix}
-          country={artistDetails?.artist_data?.country}
-          country_code={artistDetails?.artist_data?.country_code}
-          tags={artistDetails?.artist_data?.tags}
-          begin_date_year={artistDetails?.artist_data?.begin_date_year}
-          end_date_year={artistDetails?.artist_data?.end_date_year}
-        ></SectionArtistDetails>
+        <>
+          <SectionArtistDetails
+            artist_name={artistDetails?.artist_data?.artist_name!}
+            artist_description={
+              artistDetails?.artist_data?.wikipedia_data.description
+            }
+            wikipedia_link={artistDetails?.artist_data?.wikipedia_suffix}
+            country={artistDetails?.artist_data?.country}
+            country_code={artistDetails?.artist_data?.country_code}
+            tags={artistDetails?.artist_data?.tags}
+            begin_date_year={artistDetails?.artist_data?.begin_date_year}
+            end_date_year={artistDetails?.artist_data?.end_date_year}
+          ></SectionArtistDetails>
+          <SectionYoutube youtubeMovies={artistDetails?.youtube_movies} />
+        </>
       </CSSTransition>
     </>
   );
