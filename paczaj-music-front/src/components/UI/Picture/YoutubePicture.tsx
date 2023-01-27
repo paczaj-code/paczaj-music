@@ -13,9 +13,8 @@ const YoutubePicture: React.FC<PictureTypes> = ({
 }) => {
   const [loaded, setLoaded] = useState(false);
   const [loadError, setLoadError] = useState(false);
-  const { setChosenYoutubeId, chosenYoutubeId } = useContext(AppContext);
+  const { setChosenYoutubeId } = useContext(AppContext);
 
-  console.log(chosenYoutubeId);
   return (
     <picture
       className={[
