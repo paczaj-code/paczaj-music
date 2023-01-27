@@ -1,5 +1,7 @@
 @import "../variables.scss";
 
+
+
 .backdrop {
     position: absolute;
     top: 0;
@@ -11,10 +13,11 @@
     justify-content: center;
 
     &--youtube {
-        background-color: hsla(225, 31%, 7%, 0.599);
+        background-color: hsla(225, 31%, 7%, 0.699);
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         z-index: 1001;
+        // width: 100%;
     }
 
     &__icon {
@@ -30,7 +33,9 @@
     .backdrop {
         width: calc(100vw - 270px);
 
-        &--artist {}
+        &--youtube {
+            width: 100%;
+        }
     }
 }
 

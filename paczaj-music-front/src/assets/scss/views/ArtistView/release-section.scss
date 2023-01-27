@@ -1,7 +1,7 @@
-.youtube__section {
+.releases__section {
     margin-top: 20px;
 
-    >.youtube--content {
+    >.releases--content {
         padding: 20px 0;
         display: flex;
         gap: 20px;
@@ -10,10 +10,9 @@
     }
 }
 
-
 @media only screen and (min-width: 700px) {
-    .youtube__section {
-        >.youtube--content {
+    .releases__section {
+        >.releases--content {
             flex-wrap: wrap;
             overflow-x: auto;
             padding-left: 30px;

@@ -1,7 +1,38 @@
 @import './variables.scss';
 @import './typography.scss';
-@import './animations.scss';
+
 @import './reset.scss';
 @import './layout/index';
 @import './UI/index';
 @import './views/index';
+@import './animations.scss';
+
+
+body {
+    background-color: hsl(224, 17%, 23%);
+}
+
+body:has(.player, .artist-list--show, .panel_release) {
+    overflow: hidden;
+    // padding-right: 9px;
+
+    >main {
+        // padding-right: 14px;
+    }
+
+}
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-thumb {
+    @include vericalScollBar-thumb;
+    // width: 30px;
+}
+
+*::-webkit-scrollbar-track {
+    // @include vericalScollBar-track;
+    background-color: hsl(224, 17%, 23%);
+    box-shadow: 0 0 7px hsla(0, 0%, 0%, 0.7) inset;
+}

@@ -14,7 +14,8 @@
 }
 
 .artist-details__divider,
-.youtube__divider {
+.youtube__divider,
+.releases__divider {
     border: 1px inset hsl(223, 24%, 20%);
     box-shadow: 0 0 2px black inset;
 
@@ -26,9 +27,9 @@
     box-shadow: 0 0 2px rgb(54, 54, 54) inset;
 }
 
-.youtube__divider:first-of-type {
-    display: none;
-}
+// .youtube__divider:first-of-type {
+//     display: none;
+// }
 
 .info_panel__divider {
     border: 1px inset hsl(223, 14%, 20%);
