@@ -14,11 +14,6 @@ body {
 
 body:has(.player, .artist-list--show, .panel_release) {
     overflow: hidden;
-    // padding-right: 9px;
-
-    >main {
-        // padding-right: 14px;
-    }
 
 }
 

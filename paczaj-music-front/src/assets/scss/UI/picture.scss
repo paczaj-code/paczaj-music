@@ -62,8 +62,7 @@
     transition: all 0.7s ease;
 }
 
-.release__picture__loader {
-    // opacity: 0;
+[class*="release__picture__loader"] {
     position: absolute;
     height: 180px;
     width: 180px;
@@ -80,5 +79,21 @@
         font-size: 4rem;
         -webkit-animation: rotate 1s infinite linear;
         animation: rotate 1s infinite linear;
+    }
+}
+
+.image__error {
+    padding-top: 50px;
+
+    >i {
+        color: hsla(0, 82%, 37%, 0.767);
+        font-size: 5rem;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    >.image__error_message {
+        color: hsla(352, 54%, 37%, 0.897);
+        font-size: 1.9rem;
+        text-shadow: 2px 2px 2px black;
     }
 }

@@ -6,9 +6,32 @@
         display: flex;
         gap: 20px;
         flex-wrap: nowrap;
-        overflow-x: scroll;
+        overflow-x: auto;
+        position: relative;
+
+
+        &::-webkit-scrollbar {
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            // background: lighten($primary, 10%);
+            @include vericalScollBar-thumb;
+            background: rgba(5, 151, 255, 0.836);
+            // width: 30px;
+        }
+
+        // &::-webkit-scrollbar-track {
+        //     // @include vericalScollBar-track;
+        //     background-color: hsl(224, 17%, 23%);
+        //     box-shadow: 0 0 7px hsla(0, 0%, 0%, 0.7) inset;
+        // }
     }
 }
+
+
+
+
 
 @media only screen and (min-width: 700px) {
     .releases__section {

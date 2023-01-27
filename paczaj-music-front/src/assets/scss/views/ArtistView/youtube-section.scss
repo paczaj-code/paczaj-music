@@ -7,6 +7,17 @@
         gap: 20px;
         flex-wrap: nowrap;
         overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+
+            @include vericalScollBar-thumb;
+            background: rgba(5, 151, 255, 0.836);
+            // width: 30px;
+        }
     }
 }
 
