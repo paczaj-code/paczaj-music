@@ -26,10 +26,12 @@ const Section: React.FC<SectionTypes> = ({
         heading_prefix={section_type}
         heading_modifier={section_modifier}
       />
-      <Divider
-        divider_prefix={section_type}
-        divider_modifier={section_modifier}
-      />
+      {section_type === 'artist-details' && (
+        <Divider
+          divider_prefix={section_type}
+          divider_modifier={section_modifier}
+        />
+      )}
       <div className={`${section_type}--content`}>{children}</div>
       <Divider
         divider_prefix={section_type}
