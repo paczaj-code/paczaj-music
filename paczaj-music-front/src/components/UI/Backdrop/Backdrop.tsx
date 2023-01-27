@@ -32,11 +32,10 @@ const Backdrop: React.FC<Partial<BackdropTypes>> = ({
         role="status"
         ref={nodeRef}
         onClick={onClick}
-        className={classNameModifiers(
-          backdrop_prefix,
-          backdrop_modifier,
-          'backdrop'
-        )}
+        className={[
+          classNameModifiers(backdrop_prefix, backdrop_modifier, 'backdrop'),
+          'backdrop',
+        ].join(' ')}
       >
         {withIconLoader && (
           <i
