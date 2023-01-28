@@ -7,14 +7,14 @@ describe('Tests for SectionArtistDetails component', () => {
   it('should be section with proper data', () => {
     render(
       <SectionArtistDetails
-        artist_name={testData.artist_name}
-        wikipedia_link={testData.wikipedia_link}
-        country={testData.country}
-        country_code={testData.country_code}
-        begin_date_year={testData.begin_date_year}
-        end_date_year={testData.end_date_year}
-        tags={testData.tags}
-        artist_description={testData.artist_description}
+        artist_name={testData.artist_data.artist_name}
+        wikipedia_link={testData.artist_data.wikipedia_link}
+        country={testData.artist_data.country}
+        country_code={testData.artist_data.country_code}
+        begin_date_year={testData.artist_data.begin_date_year}
+        end_date_year={testData.artist_data.end_date_year}
+        tags={testData.artist_data.tags}
+        artist_description={testData.artist_data.artist_description}
       />
     );
 
@@ -28,14 +28,14 @@ describe('Tests for SectionArtistDetails component', () => {
   it('should be button show more and change class on click event', () => {
     render(
       <SectionArtistDetails
-        artist_name={testData.artist_name}
-        wikipedia_link={testData.wikipedia_link}
-        country={testData.country}
-        country_code={testData.country_code}
-        begin_date_year={testData.begin_date_year}
-        end_date_year={testData.end_date_year}
-        tags={testData.tags}
-        artist_description={testData.artist_description}
+        artist_name={testData.artist_data.artist_name}
+        wikipedia_link={testData.artist_data.wikipedia_link}
+        country={testData.artist_data.country}
+        country_code={testData.artist_data.country_code}
+        begin_date_year={testData.artist_data.begin_date_year}
+        end_date_year={testData.artist_data.end_date_year}
+        tags={testData.artist_data.tags}
+        artist_description={testData.artist_data.artist_description}
       />
     );
     const button = screen.getByRole('button');
@@ -51,13 +51,13 @@ describe('Tests for SectionArtistDetails component', () => {
   it('should button have class hidden when text is short', () => {
     render(
       <SectionArtistDetails
-        artist_name={testData.artist_name}
-        wikipedia_link={testData.wikipedia_link}
-        country={testData.country}
-        country_code={testData.country_code}
-        begin_date_year={testData.begin_date_year}
-        end_date_year={testData.end_date_year}
-        tags={testData.tags}
+        artist_name={testData.artist_data.artist_name}
+        wikipedia_link={testData.artist_data.wikipedia_link}
+        country={testData.artist_data.country}
+        country_code={testData.artist_data.country_code}
+        begin_date_year={testData.artist_data.begin_date_year}
+        end_date_year={testData.artist_data.end_date_year}
+        tags={testData.artist_data.tags}
         artist_description="short"
       />
     );
@@ -68,13 +68,13 @@ describe('Tests for SectionArtistDetails component', () => {
   it('should be link to wikipedia', () => {
     render(
       <SectionArtistDetails
-        artist_name={testData.artist_name}
-        wikipedia_link={testData.wikipedia_link}
-        country={testData.country}
-        country_code={testData.country_code}
-        begin_date_year={testData.begin_date_year}
-        end_date_year={testData.end_date_year}
-        tags={testData.tags}
+        artist_name={testData.artist_data.artist_name}
+        wikipedia_link={testData.artist_data.wikipedia_link}
+        country={testData.artist_data.country}
+        country_code={testData.artist_data.country_code}
+        begin_date_year={testData.artist_data.begin_date_year}
+        end_date_year={testData.artist_data.end_date_year}
+        tags={testData.artist_data.tags}
       />
     );
     const link = screen.getByRole('link');
